@@ -1,0 +1,106 @@
+/* main styiling ---- */
+.main {
+  padding: 20px;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* --- reusable css ---  */
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-top: 10px; */
+}
+
+/* ---reusable css end */
+
+.card-container {
+  /* display: grid;
+  grid-template-columns: repeat(5, 1fr); */
+  flex-wrap: wrap;
+  gap: 12px;
+  padding: 12px;
+}
+.card {
+  width: 220px;
+  border-radius: 8px;
+  box-shadow: rgba(231, 6, 6, 0.16) 0px 3px 6px,
+    rgba(126, 37, 37, 0.23) 0px 3px 6px;
+}
+.movie-poster {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.movie-details {
+  padding: 8px;
+}
+
+h4 {
+  background: linear-gradient(to left, #121fcf 0%, #cf1512 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.release-year {
+  margin-top: 8px;
+  color: #000000;
+}
+.rating {
+  font-size: 12px;
+  /* margin-top: 8px; */
+  color: white;
+  width: max-content;
+  padding: 2px 8px;
+  border-radius: 4px;
+  background-color: #24963f;
+}
+
+/* - search container styling---- */
+.search-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  margin: 20px 0;
+}
+.input-box {
+  padding: 12px 8px;
+  width: 400px;
+  border: none;
+  /* border: 1px solid #ccc;
+  border-radius: 8px; */
+  outline: none;
+}
+.input-container {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 0 4px;
+}
+/* movie card container styling ----  */
+.movie-card-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.card {
+  /* display: flex; */
+  position: relative;
+}
+.heart {
+  position: absolute;
+  right: 45px;
+  top: 80px;
+  font-size: 20px;
+}
